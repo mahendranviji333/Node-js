@@ -5,8 +5,11 @@ const rl = readline.createInterface({
 });
 
 function collectAnswers(questions, done) {
+  console.log('step 1',questions)
   const answers = [];
   const [firstQuestion] = questions;
+  console.log(firstQuestion)
+
 
   const questionAnswered = (answer) => {
     answers.push(answer.trim());
